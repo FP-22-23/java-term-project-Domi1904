@@ -1,18 +1,25 @@
-## Getting Started
+#The Stock class is used to represent a stock and its relevant information.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
+###Fields:
 
-The workspace contains two folders by default, where:
+date (LocalDate): The date of the stock.
+open (Double): The opening price of the stock.
+close (Double): The closing price of the stock.
+high (Double): The highest price the stock reached during the day.
+low (Double): The lowest price the stock reached during the day.
+adj_Close (Double): The adjusted closing price of the stock.
+volume (Integer): The number of shares traded during the day.
+uptrend (Boolean): True if the stock opened and closed higher, false otherwise.
+changeInPercentige (Double): The percentage change in the stock price from open to close.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+###Constructors
+There are two constructors for this class:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Stock(LocalDate date, Double open, Double close, Double high, Double low, Double adj_Close, Integer volume): This constructor takes the stock's information as separate parameters and sets the data fields accordingly.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Stock(String s): This constructor takes a string in the format "yyyy-MM-dd,open,high,low,close,adj_close,volume" and parses it to create a Stock object.
 
-## Dependency Management
+###Methods
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+This class has getters and setters for each data field. It also implements the Comparable interface to allow for sorting of Stock objects by date and percentage change. The hashCode and equals methods are also implemented for use in hash tables.
