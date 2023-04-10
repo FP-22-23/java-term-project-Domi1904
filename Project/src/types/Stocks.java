@@ -19,4 +19,11 @@ public class Stocks{
     public Integer getSizeOfStocks(){
         return stocks.size();
     }
+
+    public Double calcProfit(){
+        for(s in stocks){
+            System.out.println("test");
+        }
+    }
+
 }
