@@ -78,6 +78,14 @@ public class Stock implements Comparable<Stock> {
     public Double getClose() {
         return close;
     }
+    public Boolean getUptrend() {
+        return uptrend;
+    }
+
+    public Double getChangeInPercentige() {
+        return changeInPercentige;
+    }
+
     public void setClose(Double close) {
         this.close = close;
     }

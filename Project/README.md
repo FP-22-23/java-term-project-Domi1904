@@ -1,5 +1,23 @@
-# The Stock class is used to represent a stock and its relevant information.
+# Amazon Stocks
 
+## Introduction
+
+The Project is build around the Amazon Stock Market prices and can Calculate different Informations like:
+
+- Percentage change between Days (open/close)
+- Utrend or Downtrend (open > close)
+- Calculate the Profit if a certain amount of money is Invested into the Stock
+- Give you the overall Up-Downtrend on all Datasets (Days)
+
+
+### Tests/Examples
+
+On the test directory you will find some examples of all funtionalities.
+Keep in mind that the Testdata will use the AMZNtest.csv dataset file.
+
+## The Stock class
+
+It is used to store all the relevant Informations with all the attributes needed to add further funtions.
 
 ### Fields:
 

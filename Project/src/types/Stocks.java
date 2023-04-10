@@ -20,10 +20,34 @@ public class Stocks{
         return stocks.size();
     }
 
-    public Double calcProfit(){
-        for(s in stocks){
-            System.out.println("test");
+    public Double calcProfit(Double moneyInvested){
+        double result = 0;
+        for(Stock s : stocks){
+            result += ((s.getChangeInPercentige())/100) * moneyInvested;
         }
+        return result;
+    }
+
+    public String calcTrend(){
+        Integer result = 0;
+        String output;
+        for(Stock s : stocks){
+            if(s.getUptrend()){
+                result += 1;
+            }
+            else{
+                result -= 1;
+            }
+        }
+
+        if(result > 0){
+            output = "The trend for this stock is positive";
+        }
+        else{
+            output = "The trend for this stock is negative";
+        }
+
+        return output;
     }
 
 }
