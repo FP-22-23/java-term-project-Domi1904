@@ -41,3 +41,14 @@ Stock(String s): This constructor takes a string in the format "yyyy-MM-dd,open,
 ### Methods
 
 This class has getters and setters for each data field. It also implements the Comparable interface to allow for sorting of Stock objects by date and percentage change. The hashCode and equals methods are also implemented for use in hash tables.
+
+### Indicators
+
+EmaIndicator: Calculates the Exponential Moving Average (EMA) for a given period.
+
+MacdPricePredictor: Predicts the future price based on MACD and its signal line.
+This method is using the EMAIndictor to predict Prices. You need to insert 3 Parameters:
+- Shorttime period
+- Longtime period
+- Signal length
+
