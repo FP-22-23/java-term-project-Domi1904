@@ -17,7 +17,7 @@ public class StockTest {
         System.out.println(s.calcTrend());
 
         System.out.println(s.calcEMA(14));
-
+        System.out.println(s.toString());
         System.out.println(s.getPrediction(shortTermPeriod, longTermPeriod, signalPeriod));
     }
 }

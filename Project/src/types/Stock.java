@@ -138,6 +138,21 @@ public class Stock implements Comparable<Stock> {
 		Stock other = (Stock) obj;
 		return Objects.equals(date, other.date);
 	}
+
+    @Override
+    public String toString() {
+        return "Stock{" +
+                "date=" + date +
+                ", open=" + open +
+                ", close=" + close +
+                ", high=" + high +
+                ", low=" + low +
+                ", adj_Close=" + adj_Close +
+                ", volume=" + volume +
+                ", uptrend=" + uptrend +
+                ", changeInPercentage=" + changeInPercentige +
+                '}';
+    }
 	
     
 }

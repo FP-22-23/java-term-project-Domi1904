@@ -13,7 +13,7 @@ The Project is build around the Amazon Stock Market prices and can Calculate dif
 ### Tests/Examples
 
 On the test directory you will find some examples of all funtionalities.
-Keep in mind that the Testdata will use the AMZNtest.csv dataset file.
+Keep in mind that the Testdata will use the AMZNtrain.csv dataset file.
 
 ## The Stock class
 
